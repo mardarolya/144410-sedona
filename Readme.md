@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ольга Мардарь](https://htmlacademy.ru/profile/id144410).
-* Наставник: `Неизвестно`.
+* Наставник: [Владимир Меркулов](https://htmlacademy.ru/profile/straniks).
 
 ---
 
