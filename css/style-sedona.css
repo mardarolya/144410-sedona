@@ -1,0 +1,17 @@
+body {
+  font-size: 14px;
+  line-height: 21px;
+  color: black;
+  font-family: "PT Sans Regular", "Arial", sans-serif;
+}
+
+.text-h2 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.features-blue .text-h2,
+.features-blue p {
+  color: white;
+}
