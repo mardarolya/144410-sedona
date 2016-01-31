@@ -3,6 +3,9 @@ body {
   line-height: 21px;
   color: black;
   font-family: "PT Sans Regular", "Arial", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #F2F2F2;
 }
 
 .text-h2 {
@@ -12,6 +15,221 @@ body {
 }
 
 .features-blue .text-h2,
-.features-blue p {
+.features-blue p,
+.features-blue span,
+.filter-hotel .advantage {
   color: white;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.global-conteiner {
+  min-width: 768px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 0 20px 0 grey;
+  background-color: #FFFFFF;
+}
+
+.main-header {
+  background: #2E5574 url("../img/back-sedona.jpg") 50% 50% no-repeat;
+  overflow: hidden;
+}
+
+.main-header.hotels {
+  background: #2E5574 url("../img/back-sedona-hotels.jpg") 50% 50% no-repeat;
+  overflow: hidden;
+}
+
+.main-navigation {
+  padding-left: 6%;
+  padding-right: 6%;
+  background-color:  #FFFFFF;
+  margin-bottom: 75px;
+}
+
+.main-navigation ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+}
+
+.main-navigation li {
+  float: left;
+  padding: 18px 0;
+  width: 20%;
+  text-align: left;
+}
+
+.main-navigation li:nth-child(3) {
+  position: absolute;
+  width: 126px;
+  padding: 0;
+  left: 50%;
+  margin-left: -63px;
+}
+
+.main-navigation li:nth-child(4),
+.main-navigation li:nth-child(5) {
+  float: right;
+  width: 20%;
+  text-align: right;
+}
+
+.main-navigation a {
+  text-decoration: none;
+}
+
+.main-intro {
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.main-intro-decoration {
+  margin-bottom: -6px;
+}
+
+.main-intro-text {
+  width: 100%;
+  padding-top: 45px;
+  padding-bottom: 55px;
+  margin-bottom: 0px;
+  background-color:  #FFFFFF;
+}
+
+.main-intro-text .text-h2 {
+  width: 500px;
+  margin: 0 auto 35px auto;
+}
+
+.main-intro-text p {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.features {
+  width: 100%;
+}
+
+.features.bg-img1 {
+  background: #314500 url("../img/features-image-1.jpg") 50% 50% no-repeat;
+}
+
+.features.bg-img2 {
+  background: url("../img/features-image-2.jpg") 50% 50% no-repeat;
+}
+
+.features-blue {
+  width: 33%;
+  background-color: #81B3D2;
+  padding: 45px 30px 40px 30px;
+  box-sizing: border-box;
+}
+
+.features-blue.to-right{
+  margin-left: 67%;
+}
+
+.features-blue .text-h2 {
+  width: 180px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.features-blue p {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.features-white,
+.features-grey,
+.footer-section {
+  float: left;
+  width: 33%;
+}
+
+.features-grey:last-child{
+  width: 34%;
+}
+
+.features-white {
+  margin-bottom: 85px;
+  margin-top: 55px;
+  padding-right: 40px;
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+
+.features-sprite {
+  height: 80px;
+  width: 80px;
+  margin: 0 auto;
+}
+
+.features-sprite.img-home {
+  background:  #FFFFFF url("../img/features-sprite.png") 5px 0 no-repeat;
+}
+
+.features-sprite.img-burg {
+  background:  #FFFFFF url("../img/features-sprite.png") -75px 0 no-repeat;
+}
+
+.features-sprite.img-present {
+  background:  #FFFFFF url("../img/features-sprite.png") -155px 0 no-repeat;
+}
+
+.features-grey {
+  padding: 40px;
+  box-sizing: border-box;
+  background-color: #EEEEEE;
+}
+
+.search-hotel .search-text,
+.search-hotel form{
+  width: 570px;
+  margin: 0 auto;
+}
+
+.search-hotel .search-text {
+  padding-top: 50px;
+}
+
+.search-text span{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* hotels */
+
+.advantage {
+  float: left;
+  width: 30%;
+}
+
+.advantage:last-child {
+  float: right;
+  width: 40%;
+}
+
+.result-hotel {
+  padding: 25px 70px;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.result-hotel-to-left {
+  float: left;
+}
+
+.result-hotel-to-right {
+  float: right;
+}
+
+.hotel-info {
+  text-align: left;
 }
