@@ -29,9 +29,8 @@
 
         <div class="main-intro">
           <img src="img/main-intro.png" alt="Welcome Sedona" width="458">
+          <img src="img/main-intro-decoration.png" alt="Decoration" width="100%" height="57">
         </div>
-
-        <img src="img/main-intro-decoration.png" alt="Decoration" width="100%" height="60" class="main-intro-decoration">
 
         <div class="main-intro-text">
           <h2 class="text-h2"> Седона - небольшой городок в Аризоне,
@@ -42,8 +41,8 @@
         </div>
       </header>
 
-      <section class="features bg-img1">
-        <div class="features-blue">
+      <section class="features-bg-1">
+        <div class="features-blue ">
           <h2 class="text-h2"> Настоящий городок
           </h2>
           <span> - 1 -
@@ -53,7 +52,7 @@
         </div>
       </section>
 
-      <section class="features clearfix">
+      <section class="clearfix">
         <div class="features-white">
           <div class="features-sprite img-home">
           </div>
@@ -83,7 +82,7 @@
         </div>
       </section>
 
-      <section class="features bg-img2">
+      <section class="features-bg-2">
         <div class="features-blue to-right">
           <h2 class="text-h2"> Там есть мост дьявола
           </h2>
@@ -103,7 +102,7 @@
           </h2>
           <span> - 3 -
           </span>
-          <p> Все достопримечательности находятся очень близко
+          <p> Все достопримеча&shy;тельности находятся очень близко
           </p>
         </div>
         <div class="features-grey">
@@ -130,34 +129,40 @@
         <div class="search-text">
           <span> Заинтересовались?
           </span>
-          <p> Укажите предполагаемые даты поездки,
+          <p> Укажите предполагаемые даты поездки, <br>
               и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
-          <p class="serch-hotel-p"> Поиск гостинницы в Седоне
+          <button class="serch-hotel-p text-h2"> Поиск гостинницы в Седоне </button>
           </p>
         </div>
         <form class="search-hotel-form" action="https://echo.htmlacademy.ru" method="post">
-          <label for="date_begin">Дата заезда</label>
-          <input type="text" name="date_begin" value="">
-          <label for="date_end">Дата выезда</label>
-          <input type="text" name="date_end" value="">
+          <div>
+            <label for="date_begin">Дата заезда:</label>
+            <input type="text" name="date_begin" value="24 апреля 2016" class="btn date-travel">
+            <button class="btn calendar" id="date-in"></button>
+          </div>
+          <div>
+            <label for="date_end">Дата выезда:</label>
+            <input type="text" name="date_end" value="4 июля 2016" class="btn date-travel">
+            <button class="btn calendar" id="date-out"></button>
+          </div>
+          <div>
+            <label for="adult">Взрослые:</label>
+            <button class="btn less-count">-</button>
+            <input type="text" name="adult" value="1" class="btn">
+            <button class="btn more-count">+</button>
 
-          <label for="adult">Взрослые</label>
-          <button class="btn less-count">-</button>
-          <input type="number" name="adult" value="1">
-          <button class="btn more-count">+</button>
-
-          <label for="child">Дети</label>
-          <button class="btn less-count">-</button>
-          <input type="text" name="child" value="1">
-          <button class="btn more-count">+</button>
-
-          <button class="search-btn" type="submit">Найти</button>
+            <label for="child" class="child">Дети:</label>
+            <button class="btn less-count">-</button>
+            <input type="text" name="child" value="1" class="btn" >
+            <button class="btn more-count">+</button>
+          </div>
+          <button class="search-btn text-h2" type="submit">Найти</button>
         </form>
       </section>
 
       <section class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11011.01182709347!2d-111.77457157288347!3d34.86644256169557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sua!4v1453471713598" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11011.01182709347!2d-111.77457157288347!3d34.86644256169557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sua!4v1453471713598" width="100%" height="475" frameborder="0" style="border:0" allowfullscreen></iframe>
       </section>
 
       <footer class="main-footer clearfix">
