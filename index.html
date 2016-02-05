@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style-sedona.css" rel="stylesheet">
   </head>
   <body>
@@ -45,9 +47,9 @@
         <div class="features-blue ">
           <h2 class="text-h2"> Настоящий городок
           </h2>
-          <span> - 1 -
+          <span> &mdash; №1 &mdash;
           </span>
-          <p> Седона - не аттракцион для туристов, там течет своя жизнь
+          <p> Седона &mdash; не аттракцион для туристов, там течет своя жизнь
           </p>
         </div>
       </section>
@@ -86,7 +88,7 @@
         <div class="features-blue to-right">
           <h2 class="text-h2"> Там есть мост дьявола
           </h2>
-          <span> - 2 -
+          <span> &mdash; №2 &mdash;
           </span>
           <p> Да, по нему можно пройти!
               Если конечно вы осмелитесь
@@ -100,7 +102,7 @@
           <h2 class="text-h2"> Небольшая <br>
                                площадь
           </h2>
-          <span> - 3 -
+          <span> &mdash; №3 &mdash;
           </span>
           <p> Все достопримеча&shy;тельности находятся очень близко
           </p>
@@ -109,7 +111,7 @@
           <h2 class="text-h2"> Красивая <br>
                                дорога
           </h2>
-          <span> - 4 -
+          <span> &mdash; №4 &mdash;
           </span>
           <p> Ехать в Седону из Лас-Вегаса совсем нескучно!
           </p>
@@ -118,7 +120,7 @@
           <h2 class="text-h2"> Мало <br>
                                туристов
           </h2>
-          <span> - 5 -
+          <span> &mdash; №5 &mdash;
           </span>
           <p> Большинство едет в Гранд Каньон и толпится там!
           </p>
@@ -139,30 +141,30 @@
           <div>
             <label for="date_begin">Дата заезда:</label>
             <input type="text" name="date_begin" value="24 апреля 2016" class="btn date-travel">
-            <button class="btn calendar" id="date-in"></button>
+            <button class="btn icon-calendar" id="date-in"></button>
           </div>
           <div>
             <label for="date_end">Дата выезда:</label>
             <input type="text" name="date_end" value="4 июля 2016" class="btn date-travel">
-            <button class="btn calendar" id="date-out"></button>
+            <button class="btn icon-calendar" id="date-out"></button>
           </div>
           <div>
             <label for="adult">Взрослые:</label>
-            <button class="btn less-count">-</button>
+            <button class="btn icon-minus"></button>
             <input type="text" name="adult" value="1" class="btn">
-            <button class="btn more-count">+</button>
+            <button class="btn icon-plus"></button>
 
             <label for="child" class="child">Дети:</label>
-            <button class="btn less-count">-</button>
+            <button class="btn icon-minus"></button>
             <input type="text" name="child" value="1" class="btn" >
-            <button class="btn more-count">+</button>
+            <button class="btn icon-plus"></button>
           </div>
           <button class="search-btn text-h2" type="submit">Найти</button>
         </form>
       </section>
-
       <section class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11011.01182709347!2d-111.77457157288347!3d34.86644256169557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sua!4v1453471713598" width="100%" height="475" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11011.01182709347!2d-111.77457157288347!3d34.86644256169557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sua!4v1453471713598" width="100%" height="592" frameborder="0" style="border:0" allowfullscreen>
+          </iframe>
       </section>
 
       <footer class="main-footer clearfix">
@@ -175,15 +177,13 @@
           <a href="#" class="social btn-fb">Facebook</a>
           <a href="#" class="social btn-inst">Instagramm</a>
         </div>
-        <div class="footer-section">
-          <p> website by
-            <a href="https://htmlacademy.ru">
-              <img src="img/html-academy.png" alt="HTML Academy" width="113">
-            </a>
-          </p>
-        </div>
-      </footer>
 
+        <p> website by
+          <a href="https://htmlacademy.ru">
+            <img src="img/html-academy.png" alt="HTML Academy" width="113">
+          </a>
+        </p>
+      </footer>
     </div>
   </body>
 </html>
