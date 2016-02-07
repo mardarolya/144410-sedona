@@ -27,8 +27,29 @@
   speak: none;
 }
 
-.icon-facebook::before { content: "\66"; } /* "f" */
-.icon-twitter::before { content: "\74"; } /* "t" */
+.icon-facebook::before,
+.icon-twitter::before,
+.icon-youtube::before {
+  position: absolute;
+  top: 15px;
+  left: 8px;
+  content: "\66";
+  font-size: 21px;
+  color: #FFFFFF;
+}
+.icon-twitter::before {
+  content: "\74";
+}
+.icon-youtube::before {
+  content: "\f39e";
+}
+
+.icon-facebook:active::before,
+.icon-twitter:active::before,
+.icon-youtube:active::before {
+  color: #94B9D2;
+}
+
 .icon-up-dir::before { content: "\25b2"; } /* "▲" */
 .icon-down-dir::before { content: "\25bc"; } /* "▼" */
 .icon-star::before { content: "\2605"; } /* "★" */
@@ -60,8 +81,6 @@
   color: #81B3D2;
 }
 
-.icon-youtube::before { content: "\f39e"; } /* "" */
-
 /* font for all doc */
 body,
 .search-hotel-form,
@@ -75,7 +94,8 @@ button {
   background-color: #F2F2F2;
 }
 
-.text-h2 {
+.text-h2,
+.hashtag {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -246,7 +266,8 @@ div, section, article, nav, img,form{
 }
 
 .features-grey:last-child,
-.features-white:last-child {
+.features-white:last-child,
+.footer-section:last-child {
   width: 34%;
 }
 
@@ -419,4 +440,64 @@ div, section, article, nav, img,form{
 
 .hotel-info {
   text-align: left;
+}
+
+/* footer */
+.footer-section {
+  display: inline-block;
+  width: 33%;
+  vertical-align: top;
+  text-align: center;
+  height: 120px;
+  font-size: 0;
+}
+
+ .footer-section .hashtag{
+  display: block;
+  padding-top: 48px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.footer-section .social {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  margin-top: 35px;
+  width: 45px;
+  height: 47px;
+  margin-right: 6px;
+  background-color: #81B3D2;
+  text-decoration: none;
+}
+
+.footer-section .social:hover {
+  background-color: #669EC0;
+}
+
+.footer-section .social:active {
+  background-color: #5496BD;
+}
+
+.footer-section span,
+.footer-section .htmlacademy {
+  display:inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  margin-top: 35px;
+  font-size: 14px;
+}
+
+.footer-section .htmlacademy{
+  width: 113px;
+  height: 39px;
+  background: #FFFFFF url("../img/html-academy.png") 0 0 no-repeat;
+}
+
+.footer-section .htmlacademy:hover {
+  background: #FFFFFF url("../img/html-academy.png") 0 -41px no-repeat;
+}
+
+.footer-section .htmlacademy:active {
+  background: #FFFFFF url("../img/html-academy.png") 0 -81px no-repeat;
 }
