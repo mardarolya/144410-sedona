@@ -6,7 +6,6 @@
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style-sedona.css" rel="stylesheet">
-
   </head>
   <body>
     <div class="global-conteiner">
@@ -22,21 +21,21 @@
             <li> <img src="img/logo.png" alt="Логотип" width="126">
             </li>
             <li>
-              <a href="#map">Карта штата</a>
+              <a href="hotels.html">Гостинницы</a>
             </li>
             <li>
-              <a href="hotels.html">Гостинницы</a>
+              <a href="#map">Карта штата</a>
             </li>
           </ul>
         </nav>
 
         <div class="main-intro">
-          <img src="img/main-intro.png" alt="Welcome Sedona" width="458">
+          <img src="img/main-intro.png" alt="Welcome Sedona" width="458" height="352">
           <img src="img/main-intro-decoration.png" alt="Decoration" height="57">
         </div>
 
         <div class="main-intro-text">
-          <h2 class="text-h2"> Седона - небольшой городок в Аризоне,
+          <h2 class="text-h2"> Седона &mdash; небольшой городок в Аризоне,
                                заслуживающий большего!
           </h2>
           <p>   Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!
@@ -55,7 +54,7 @@
         </div>
       </section>
 
-      <section class="clearfix">
+      <section class="features-white-section clearfix">
         <div class="features-white">
           <div class="features-sprite img-home">
           </div>
@@ -98,9 +97,9 @@
 
       </section>
 
-      <section class="features clearfix">
+      <section class="features bcg-grey clearfix">
         <div class="features-grey">
-          <h2 class="text-h2"> Небольшая <br>
+          <h2 class="text-h2"> Небольшая<br>
                                площадь
           </h2>
           <span> &mdash; №3 &mdash;
@@ -109,7 +108,7 @@
           </p>
         </div>
         <div class="features-grey">
-          <h2 class="text-h2"> Красивая <br>
+          <h2 class="text-h2"> Красивая<br>
                                дорога
           </h2>
           <span> &mdash; №4 &mdash;
@@ -123,7 +122,7 @@
           </h2>
           <span> &mdash; №5 &mdash;
           </span>
-          <p> Большинство едет в Гранд Каньон и толпится там
+          <p> Большинство едет в Гранд Каньон и толпится там!
           </p>
         </div>
       </section>
@@ -135,7 +134,6 @@
           <p> Укажите предполагаемые даты поездки, <br>
               и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
-
           <!-- <button class="serch-hotel-p text-h2"> Поиск гостинницы в Седоне </button> -->
          </div>
          <label for="for-show-form" class="serch-hotel-label"> Поиск гостинницы в Седоне </label>
@@ -144,48 +142,47 @@
           <div>
             <label for="date_begin">Дата заезда:</label>
             <input type="text" id="date_begin" value="24 апреля 2016" class="btn date-travel">
-            <button class="btn icon-calendar" id="date-in"></button>
+            <button class="btn icon-calendar" id="date-in" type="button"></button>
           </div>
           <div>
             <label for="date_end">Дата выезда:</label>
             <input type="text" id="date_end" value="4 июля 2016" class="btn date-travel">
-            <button class="btn icon-calendar" id="date-out"></button>
+            <button class="btn icon-calendar" id="date-out" type="button"></button>
           </div>
           <div>
             <label for="adult">Взрослые:</label>
-            <button class="btn icon-minus"></button>
-            <input type="text" id="adult" value="1" class="btn">
-            <button class="btn icon-plus"></button>
+            <button class="btn icon-minus minus-adult" type="button"></button>
+            <input type="text" id="adult" value="1" class="btn adult-count" name="adult-count">
+            <button class="btn icon-plus plus-adult" type="button"></button>
             <label for="child" class="child">Дети:</label>
-            <button class="btn icon-minus"></button>
-            <input type="text" id="child" value="1" class="btn" >
-            <button class="btn icon-plus"></button>
+            <button class="btn icon-minus minus-child" type="button"></button>
+            <input type="text" id="child" value="1" class="btn child-count" name="child-count">
+            <button class="btn icon-plus plus-child" type="button"></button>
           </div>
           <button class="search-btn text-h2" type="submit">Найти</button>
         </form>
       </section>
 
-      <section>
-        <a name="map"></a>
-        <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11011.01182709347!2d-111.77457157288347!3d34.86644256169557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sua!4v1453471713598" height="590" allowfullscreen>
-        </iframe>
-      </section>
-
-      <footer class="clearfix">
-        <div class="footer-section">
-          <a href="https://www.instagram.com/explore/tags/visitsedona/" class="hashtag"> #visitsedona </a>
-        </div>
-        <div class="footer-section">
-          <a href="https://twitter.com/sedonaaz" class="social icon-twitter">Twitter</a>
-          <a href="https://www.facebook.com/VisitSedona/" class="social icon-facebook">Facebook</a>
-          <a href="https://www.youtube.com/watch?v=qhdB9UmrRWM" class="social icon-youtube">Youtube</a>
-        </div>
-        <div class="footer-section">
-
-          <span class="website"> website by</span>
-            <a href="https://htmlacademy.ru" class="htmlacademy"></a>
-        </div>
-      </footer>
+      <div class="map-footer">
+        <div id="map"></div>
+        <footer class="main-footer clearfix">
+          <div class="footer-section">
+            <a href="https://www.instagram.com/explore/tags/visitsedona/" class="hashtag"> #visitsedona </a>
+          </div>
+          <div class="footer-section">
+            <a href="https://twitter.com/sedonaaz" class="social icon-twitter">Twitter</a>
+            <a href="https://www.facebook.com/VisitSedona/" class="social icon-facebook">Facebook</a>
+            <a href="https://www.youtube.com/watch?v=qhdB9UmrRWM" class="social icon-youtube">Youtube</a>
+          </div>
+          <div class="footer-section">
+            <span class="website"> website by</span>
+              <a href="https://htmlacademy.ru" class="htmlacademy"></a>
+          </div>
+        </footer>
+      </div>
     </div>
+    <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+    <script src="js/map_and_buttons
+    .js"></script>
   </body>
 </html>
