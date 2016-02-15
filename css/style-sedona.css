@@ -449,6 +449,7 @@ span.result-hotel-sort {
   background-color: #766357;
   color: #FFFFFF;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .search-text .serch-hotel-p {
@@ -474,6 +475,12 @@ span.result-hotel-sort {
   background-color: #FFFFFF;
   padding: 55px;
   z-index: 2;
+}
+
+.form-visible {
+  position: relative;
+  opacity: 1;
+  top: 0;
 }
 
 /*input+checker - решение без скрипта, но не по критериям*/
