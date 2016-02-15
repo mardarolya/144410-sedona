@@ -8,6 +8,8 @@ function init () {
 }
 
 var form = document.querySelector(".search-hotel-form");
+var ShowForm = document.querySelector(".serch-hotel-label");
+
 var AdultCount = form.querySelector(".adult-count");
 var ChildCount = form.querySelector(".child-count");
 
@@ -15,6 +17,16 @@ var MinusAdult = form.querySelector(".minus-adult");
 var PlusAdult = form.querySelector(".plus-adult");
 var MinusChild = form.querySelector(".minus-child");
 var PlusChild = form.querySelector(".plus-child");
+
+ShowForm.addEventListener("click", function(event) {
+  event.preventDefault();
+  if (form.classList.contains("search-hotel-show")) {
+      form.classList.remove("search-hotel-show");
+    }
+    else {
+      form.classList.add("search-hotel-show");
+    }
+});
 
 MinusAdult.addEventListener("click", function(event) {
   event.preventDefault();

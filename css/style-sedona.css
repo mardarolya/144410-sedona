@@ -195,12 +195,12 @@ span.result-hotel-sort {
 }
 
 .main-header {
-  background: #2E5574 url("../img/back-sedona.jpg") top center no-repeat;
+  background: #81B3D2 url("../img/back-sedona.jpg") top center no-repeat;
   overflow: hidden;
 }
 
 .main-header.hotels {
-  background: #2E5574 url("../img/back-sedona-hotels.jpg") top center no-repeat;
+  background: #81B3D2 url("../img/back-sedona-hotels.jpg") top center no-repeat;
 }
 
 .main-navigation {
@@ -435,12 +435,14 @@ span.result-hotel-sort {
 .check-for-show-form {
   display: none;
 }
+
 .serch-hotel-label {
   display: inline-block;
   vertical-align: middle;
   width: 100%;
   padding: 30px 0;
-
+  outline: none;
+  border: none;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -474,7 +476,9 @@ span.result-hotel-sort {
   z-index: 2;
 }
 
-input[type="checkbox"]:checked ~ .search-hotel-form {
+/*input+checker - решение без скрипта, но не по критериям*/
+input[type="checkbox"]:checked ~ .search-hotel-form,
+.search-hotel-show {
   transform: translateY(470px);
   opacity: 1;
   transition: all 1s ease;
