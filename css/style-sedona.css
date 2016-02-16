@@ -185,6 +185,11 @@ span.result-hotel-sort {
   clear: both;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* header for all pages */
 .global-conteiner {
   min-width: 768px;
@@ -815,6 +820,7 @@ input[type="checkbox"]:checked ~ .search-hotel-form,
 
 .result-hotel-to-left.img-hotel {
   height: 90px;
+  width: 135px;
   margin-right: 30px;
 }
 
@@ -908,6 +914,7 @@ input[type="checkbox"]:checked ~ .search-hotel-form,
   min-height: 120px;
 }
 
+/* id использован только для карты*/
 #map{
   position: absolute;
   /*background-color: green;*/
