@@ -1,10 +1,10 @@
 ymaps.ready(init);
 
 function init () {
-    var myMap = new ymaps.Map('map', {
-        center: [34.8697395, -111.7609896], // Седона
-        zoom: 15
-        });
+  var myMap = new ymaps.Map('map', {
+    center: [34.8697395, -111.7609896], // Седона
+    zoom: 15
+  });
 }
 
 var form = document.querySelector(".search-hotel-form");
@@ -17,6 +17,12 @@ var MinusAdult = form.querySelector(".minus-adult");
 var PlusAdult = form.querySelector(".plus-adult");
 var MinusChild = form.querySelector(".minus-child");
 var PlusChild = form.querySelector(".plus-child");
+
+var DateBegin = form.querySelector("#date_begin");
+var DateEnd = form.querySelector("#date_end");
+
+var SendForm = form.querySelector(".search-btn");
+
 
 ShowForm.addEventListener("click", function(event) {
   event.preventDefault();
@@ -50,4 +56,13 @@ MinusChild.addEventListener("click", function(event) {
 PlusChild.addEventListener("click", function(event) {
   event.preventDefault();
   ChildCount.value = Number(ChildCount.value) + 1
+});
+
+form.addEventListener("submit", function(event) {
+  if (DateBegin.value ==''||DateEnd.value ==''||AdultCount.value ==''||Number(AdultCount.value)==0){
+    event.preventDefault();
+    form.classList.remove("search-hotel-error");
+    form.offsetWidth = form.offsetWidth;
+    form.classList.add("search-hotel-error");
+  }
 });
