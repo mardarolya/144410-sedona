@@ -819,12 +819,18 @@ input[type="checkbox"]:checked ~ .search-hotel-form,
   border-bottom: 1px solid #E5E5E5;
 }
 
-.result-hotel-to-left {
+.result-hotel-to-left,
+.result-hotel-to-left-inline {
   float: left;
 }
 
 .result-hotel-to-right {
   float: right;
+}
+
+.result-hotel-to-left-inline {
+  font-size: 0;
+  margin:0;
 }
 
 .result-hotel-sort,
@@ -843,7 +849,7 @@ input[type="checkbox"]:checked ~ .search-hotel-form,
   width: 115px;
 }
 
-.result-hotel-to-left a.result-hotel-sort {
+.result-hotel-to-left-inline a.result-hotel-sort {
   text-decoration: none;
 }
 
@@ -864,9 +870,9 @@ input[type="checkbox"]:checked ~ .search-hotel-form,
   border-bottom: 1px dotted transparent;
 }
 
-.result-hotel-to-left .active-link,
-.result-hotel-to-left .active-link:hover,
-.result-hotel-to-left .active-link:active  {
+.result-hotel-to-left-inline .active-link,
+.result-hotel-to-left-inline .active-link:hover,
+.result-hotel-to-left-inline .active-link:active  {
   color: #81B3D2;
 }
 
