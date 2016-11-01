@@ -4,4 +4,4 @@
 * Наставник: [Владимир Меркулов](https://htmlacademy.ru/profile/straniks).
 
 
-<img width="769" alt="" src="https://github.com/mardarolya/mardarolya.github.com/img/sedona.jpg">
+<img width="769" alt="Sedona" src="https://github.com/mardarolya/mardarolya.github.com/blob/master/img/sedona.jpg">
